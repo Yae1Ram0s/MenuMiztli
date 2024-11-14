@@ -358,6 +358,83 @@ html {
     transition: transform 0.3s ease;
 }
 
+/* Estilos para pantallas de 768px o menos */
+@media screen and (max-width: 768px) {
+    /* Ajuste del contenedor principal */
+    .menu-container {
+        grid-template-columns: 1fr; /* Columna única */
+        padding: 0; /* Sin padding en los lados */
+        margin: 0; /* Elimina el margen automático */
+        width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    }
+
+    /* Ajuste de los elementos de menú */
+    .menu-item {
+        padding: 20px;
+        margin: 0; /* Elimina márgenes externos */
+        border-radius: 0; /* Sin bordes redondeados para aprovechar mejor el espacio */
+        width: 100%; /* Asegura que cada elemento ocupa el 100% del ancho */
+        box-sizing: border-box; /* Asegura que el padding no afecta el ancho total */
+    }
+
+    /* Ajuste del contenedor de imágenes */
+    .menu-image {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto; /* Permite deslizar las imágenes horizontalmente si es necesario */
+        padding: 10px 0;
+        width: 100%; /* Asegura que el contenedor de imágenes ocupe todo el ancho */
+        justify-content: center; /* Centra las imágenes horizontalmente */
+    }
+
+    /* Imágenes dentro del contenedor de imágenes */
+    .menu-image img {
+        width: 100px; /* Ajusta el ancho de las imágenes para hacerlas más pequeñas */
+        height: 100px; /* Ajusta la altura de las imágenes para que sean proporcionales */
+        border-radius: 8px; /* Bordes redondeados */
+        flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+        object-fit: cover; /* Mantiene el aspecto de las imágenes dentro del tamaño */
+    }
+
+    /* Ajuste de la descripción */
+    .menu-description {
+        font-size: 14px; /* Tamaño más pequeño para móviles */
+        margin: 10px 0; /* Ajusta el margen */
+    }
+
+    /* Ajuste de las secciones */
+    .entradas-section,
+    .comidas-section,
+    .bebidas-section,
+    .postres-section {
+        flex-direction: column,center; /* Columna única */
+        padding: 0; /* Sin padding lateral */
+        margin: 0; /* Sin márgenes externos */
+        width: 100%; /* Ocupa todo el ancho */
+        
+    }
+
+    /* Línea decorativa */
+    .line-decoration {
+        width: 90%; /* Ancho adaptado */
+        margin: 20px auto; /* Centrada con márgenes arriba y abajo */
+    }
+
+    /* Ajuste de títulos */
+    .titulo2 {
+        font-size: 24px; /* Tamaño reducido en móviles */
+        padding: 0 10px; /* Margen lateral para mejor ajuste */
+    }
+
+    /* Etiquetas y precios */
+    .menu-price, .entry-price {
+        font-size: 18px;
+        display: block;
+        text-align: left;
+    }
+}
+
+
 .entry-image:hover {
     transform: scale(1.03);
 }
