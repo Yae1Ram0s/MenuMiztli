@@ -3,31 +3,35 @@ body{
 }
 
 
+/*Seccion de los paquetes del menu*/
 .menu-container {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Crea columnas flexibles que se adaptan al ancho */
     gap: 30px;
     padding: 40px 20px;
     
     
 }
 
+/* Estilos para cada item de menú */
 .menu-item {
-    background-color: rgba(149, 119, 44, 0.1);
+    background-color: rgba(149, 119, 44, 0.1); /* Fondo con color semi-transparente */
     border: 1px solid #d4af37;
     border-radius: 16px;
     padding: 25px;
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición para transformaciones */
 }
 
+/* Efecto hover para .menu-item */
 .menu-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra adicional */
 }
 
+/* Etiqueta de promoción o tag */
 .menu-tag {
     position: absolute;
     top: 10px;
@@ -42,10 +46,12 @@ body{
     text-transform: uppercase;
 }
 
+/* Encabezado dentro del item de menú */
 .menu-header {
     margin: 20px 0 30px;
 }
 
+/* Estilo del Título del menú */
 .menu-title {
     font-size: 22px;
     color: #bfc7d5;
@@ -53,6 +59,7 @@ body{
     margin: 0;
 }
 
+/* Subtítulo o descripción corta */
 .menu-header span {
     display: block;
     font-size: 14px;
@@ -60,6 +67,7 @@ body{
     margin-top: 5px;
 }
 
+/* Parametros del Contenedor de imágenes del menú */
 .menu-image {
     display: flex;
     gap: 15px;
@@ -68,21 +76,24 @@ body{
     padding: 10px 0;
 }
 
+/* Estilos para las imágenes dentro de .menu-image */
 .menu-image img {
     width: 150px;
     height: 150px;
     border-radius: 12px;
-    object-fit: cover;
+    object-fit: cover; /* Ajuste de imagen y opacidad */
     transition: transform 0.3s ease;
     opacity: 0.9;
 
 }
 
+/* Efecto hover para imágenes del menú */
 .menu-image img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Escala y opacidad al pasar el cursor */
     opacity: 1;
 }
 
+/* Descripción del menú */
 .menu-description {
     text-align: left;
     font-size: 15px;
@@ -92,6 +103,7 @@ body{
     letter-spacing: .5px;
 }
 
+/* Lista de elementos dentro de .menu-description */
 .menu-description li {
     margin-bottom: 12px;
     list-style-type: none;
@@ -99,6 +111,7 @@ body{
     position: relative;
 }
 
+/* Punto decorativo en cada elemento de lista */
 .menu-description li::before {
     content: "•";
     position: absolute;
@@ -106,22 +119,24 @@ body{
     color: #d4af37;
 }
 
+/* Precio del menú */
 .menu-price {
     font-size: 20px;
     color: #333;
     margin: 15px 0;
 }
 
+/* Precio anterior (tachado) */
 .menu-price del {
     color: #d9534f;
     font-size: 18px;
     margin-right: 15px;
 }
 
+/* Precio actual (en negrita) */
 .menu-price strong {
     color: #5cb85c;
 }
-
 
 
 /*Titulos de la seccion de los menus*/
@@ -168,7 +183,7 @@ body{
 }
 
 
-/*Entradas*/
+/*Estilos de las Entradas*/
 .entradas-section {
     max-width: 1400px;
     padding: 40px 20px;
@@ -178,13 +193,14 @@ body{
     gap: 20px;
     justify-content: center;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('menu/fondo.png');
+                url('menu/fondo.png');  /* Fondo con gradiente oscuro sobre una imagen */
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply; /* Mezcla la imagen con el fondo */
     border-radius: 16px;
 }
 
+/* Elementos individuales de cada entrada */
 .menu-entry-item {
     background-color: rgba(236, 174, 16, 0.1);
     padding: 15px;
@@ -195,15 +211,18 @@ body{
     min-width: 300px; /* Ancho mínimo */
     text-align: center; /* Centrar el contenido */
     border: 1px solid #d4af37; /* Borde dorado */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
 }
 
+/* Eatos elementos se repiten para las demas secciones*/
+/* Efecto hover para el elemento de entrada */
 .menu-entry-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
 }
 
+/* Nombre de la entrada */
 .entry-name {
     font-weight: bold;
     font-size: 18px;
@@ -213,12 +232,14 @@ body{
     margin-bottom: 5px;
 }
 
+/* Peso o descripción adicional de la entrada */
 .entry-weight {
     font-size: 14px;
     color: #a3a2a2;
     margin-left: 10px;
 }
 
+/* Precio de la entrada */
 .entry-price {
     float: right;
     font-weight: bold;
@@ -226,12 +247,14 @@ body{
     color: #5cb85c; /* Color del precio verde */
 }
 
+/* Estilo para el texto dentro de menu-entry-item */
 .menu-entry-item p {
     font-size: 14px;
     color: beige;
     margin-top: 10px;
 }
 
+/* Etiqueta para nuevos elementos */
 .new-entry {
     background-color: #ff6600; /* Color naranja para "Nuevo" */
     color: #fff;
@@ -274,6 +297,7 @@ body{
 
 }
 
+/* Estilos de imagenes */
 .entry-image {
     width: 100px; /* Ajusta el tamaño de la imagen */
     height: 100px; /* Ajusta el tamaño de la imagen */
@@ -294,8 +318,6 @@ body{
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
-
-
 }
 
 .menu-entry-item ul {
@@ -336,16 +358,78 @@ body{
     transform: scale(1.03);
 }
 
-@media (max-width: 768px) {
+/* Estilos para pantallas de 768px o menos */
+@media screen and (max-width: 768px) {
+    /* Ajuste de la estructura del contenedor del menú */
     .menu-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Una sola columna para facilitar la visualización */
+        padding: 20px; /* Reducir el espacio alrededor del contenedor */
+    }
+
+    /* Ajuste de los ítems del menú */
+    .menu-item {
+        padding: 15px; /* Menos espacio dentro de cada item */
+    }
+
+    /* Ajuste de la descripción */
+    .menu-description {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        padding: 10px 0; /* Reducir el espacio vertical */
+    }
+
+    /* Ajuste de las imágenes dentro del ítem de menú */
+    .menu-image img {
+        width: 120px; /* Ajustar el tamaño de las imágenes */
+        height: 120px;
+    }
+
+    /* Ajuste del tamaño del título */
+    .menu-title {
+        font-size: 20px; /* Reducir el tamaño del título */
+    }
+
+    /* Ajuste de la sección de entradas */
+    .entradas-section {
+        flex-direction: column; /* Mostrar los elementos en columna */
+        padding: 20px; /* Reducir el padding */
+    }
+
+    .menu-entry-item {
+        width: 100%; /* Los elementos ocupan el 100% del ancho disponible */
+        margin-bottom: 15px; /* Espacio entre los elementos */
+    }
+
+    /* Ajustes de las imágenes en las entradas */
+    .entry-image {
+        width: 80%; /* Reducir el tamaño de las imágenes */
+        height: 120px;
+    }
+
+    /* Ajuste de las líneas decorativas */
+    .line-decoration {
+        width: 80%; /* Reducir el tamaño de la línea decorativa */
+        margin: 20px auto;
+    }
+
+    /* Ajuste de los precios */
+    .menu-price {
+        font-size: 16px; /* Reducir el tamaño de los precios */
+    }
+
+    /* Ajuste de los títulos en la sección */
+    .titulo2 {
+        font-size: 28px; /* Reducir el tamaño del título */
+    }
+
+    /* Ajuste de los items de menú (entrada, comidas, bebidas) */
+    .comidas-section, .bebidas-section, .postres-section {
+        flex-direction: column; /* Mostrar los elementos en columna */
     }
     
-    .entradas-section,
-    .comidas-section,
-    .bebidas-section,
-    .postres-section {
-        grid-template-columns: 1fr;
+    /* Ajuste de la etiqueta de nuevos elementos */
+    .new-entry {
+        font-size: 10px; /* Reducir el tamaño del texto en el tag de "nuevo" */
     }
 }
+
 
