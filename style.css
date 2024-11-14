@@ -2,6 +2,10 @@ body{
     background-color: rgb(36, 34, 28);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /*Seccion de los paquetes del menu*/
 .menu-container {
@@ -357,79 +361,4 @@ body{
 .entry-image:hover {
     transform: scale(1.03);
 }
-
-/* Estilos para pantallas de 768px o menos */
-@media screen and (max-width: 768px) {
-    /* Ajuste de la estructura del contenedor del menú */
-    .menu-container {
-        grid-template-columns: 1fr; /* Una sola columna para facilitar la visualización */
-        padding: 20px; /* Reducir el espacio alrededor del contenedor */
-    }
-
-    /* Ajuste de los ítems del menú */
-    .menu-item {
-        padding: 15px; /* Menos espacio dentro de cada item */
-    }
-
-    /* Ajuste de la descripción */
-    .menu-description {
-        font-size: 14px; /* Reducir el tamaño del texto */
-        padding: 10px 0; /* Reducir el espacio vertical */
-    }
-
-    /* Ajuste de las imágenes dentro del ítem de menú */
-    .menu-image img {
-        width: 120px; /* Ajustar el tamaño de las imágenes */
-        height: 120px;
-    }
-
-    /* Ajuste del tamaño del título */
-    .menu-title {
-        font-size: 20px; /* Reducir el tamaño del título */
-    }
-
-    /* Ajuste de la sección de entradas */
-    .entradas-section {
-        flex-direction: column; /* Mostrar los elementos en columna */
-        padding: 20px; /* Reducir el padding */
-    }
-
-    .menu-entry-item {
-        width: 100%; /* Los elementos ocupan el 100% del ancho disponible */
-        margin-bottom: 15px; /* Espacio entre los elementos */
-    }
-
-    /* Ajustes de las imágenes en las entradas */
-    .entry-image {
-        width: 80%; /* Reducir el tamaño de las imágenes */
-        height: 120px;
-    }
-
-    /* Ajuste de las líneas decorativas */
-    .line-decoration {
-        width: 80%; /* Reducir el tamaño de la línea decorativa */
-        margin: 20px auto;
-    }
-
-    /* Ajuste de los precios */
-    .menu-price {
-        font-size: 16px; /* Reducir el tamaño de los precios */
-    }
-
-    /* Ajuste de los títulos en la sección */
-    .titulo2 {
-        font-size: 28px; /* Reducir el tamaño del título */
-    }
-
-    /* Ajuste de los items de menú (entrada, comidas, bebidas) */
-    .comidas-section, .bebidas-section, .postres-section {
-        flex-direction: column; /* Mostrar los elementos en columna */
-    }
-    
-    /* Ajuste de la etiqueta de nuevos elementos */
-    .new-entry {
-        font-size: 10px; /* Reducir el tamaño del texto en el tag de "nuevo" */
-    }
-}
-
 
